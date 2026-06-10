@@ -55,6 +55,18 @@ a:hover { text-decoration: underline; }
   margin: 0 auto;
 }
 .hero-mark { width: 104px; height: 104px; margin-bottom: 20px; filter: drop-shadow(0 8px 30px rgba(90, 200, 250, 0.25)); }
+.badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
 .hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); margin: 0 0 12px; letter-spacing: -0.5px; }
 .tagline { font-size: 1.2rem; color: var(--text-dim); max-width: 620px; margin: 0 auto 32px; }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -98,6 +110,35 @@ a:hover { text-decoration: underline; }
 }
 .card h3 { margin: 0 0 8px; font-size: 1.1rem; color: var(--accent); }
 .card p { margin: 0; color: var(--text-dim); font-size: 0.97rem; }
+
+.steps {
+  display: grid;
+  gap: 16px;
+  margin-top: 32px;
+}
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.step-num {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #07222e;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step h3 { margin: 0 0 4px; font-size: 1.05rem; color: var(--accent); }
+.step p { margin: 0; color: var(--text-dim); font-size: 0.97rem; }
 
 .note {
   margin-top: 28px;

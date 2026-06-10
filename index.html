@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DropSauce — Manga reader with Google Drive sync</title>
-  <meta name="description" content="DropSauce is a free, open-source manga reader for Android. Read, organize and track your manga, and sync your library across devices with your own Google Drive." />
+  <title>DropSauce — Free open-source manga reader for Android</title>
+  <meta name="description" content="DropSauce is a free, open-source manga reader for Android. Build a personal library, track your reading, customize the reader, and sync across devices with your own Google Drive." />
   <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,6 +25,7 @@
       <a href="#features">Features</a>
       <a href="#sync">Drive sync</a>
       <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
       <a href="https://github.com/HuzaifaKhalid1311/DropSauce" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -39,74 +40,124 @@
           <path d="M586.8,0l140.4,326.4l365.6,11.2l19.7,-337.4l-525.7,-0.2z"/>
         </g>
       </svg>
+      <span class="badge">Free &amp; open source · GPLv3 · Android</span>
       <h1>DropSauce</h1>
-      <p class="tagline">A fast, free and open-source manga reader for Android — with optional sync to your own Google Drive.</p>
+      <p class="tagline">A fast, beautiful, ad-free manga reader for Android. Organize your library, never lose your place, and sync everything across devices with your own Google Drive.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="https://github.com/HuzaifaKhalid1311/DropSauce" rel="noopener">Get it on GitHub</a>
-        <a class="btn btn-ghost" href="#sync">How sync works</a>
+        <a class="btn btn-primary" href="https://github.com/HuzaifaKhalid1311/DropSauce/releases" rel="noopener">Download</a>
+        <a class="btn btn-ghost" href="https://github.com/HuzaifaKhalid1311/DropSauce" rel="noopener">View source</a>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <section id="about" class="section">
       <h2>What is DropSauce?</h2>
       <p class="lead">
-        DropSauce is an Android app for reading and organizing manga from online sources you add yourself.
-        It lets you build a personal library, sort titles into categories, keep your reading history and
-        progress, bookmark pages, and track series — all stored locally on your device.
+        DropSauce is an Android app for reading and organizing manga. It brings all the series you follow into
+        one clean, customizable library, keeps track of what you've read, and stays out of your way — no ads,
+        no sign-up to read, and no tracking. It's free and open source, built with a modern Material&nbsp;3
+        Expressive design.
       </p>
+      <p class="lead">
+        DropSauce does not host or provide any content of its own. Instead, you add the online sources you want
+        to read from, and the app gives you a great reading and organizing experience on top of them.
+      </p>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <h2>Features</h2>
       <div class="cards">
         <div class="card">
           <h3>Personal library</h3>
-          <p>Save your favourites, organize them into colour-coded categories, and pick up exactly where you left off.</p>
+          <p>Save your favourites and sort them into colour-coded categories that match how you actually read.</p>
         </div>
         <div class="card">
-          <h3>Reading history &amp; progress</h3>
-          <p>Your history and per-chapter reading position are kept so you never lose your place.</p>
+          <h3>History &amp; progress</h3>
+          <p>Your reading history and exact per-chapter position are remembered, so you always continue where you left off.</p>
         </div>
         <div class="card">
-          <h3>Bookmarks &amp; tracking</h3>
-          <p>Bookmark individual pages and track the series you follow, with reading statistics.</p>
+          <h3>Bookmarks</h3>
+          <p>Bookmark individual pages and jump back to the moments you want to keep.</p>
         </div>
         <div class="card">
-          <h3>Open source</h3>
-          <p>DropSauce is free and open source, distributed through GitHub. No ads, no accounts required to read.</p>
+          <h3>Tracking &amp; stats</h3>
+          <p>Follow the series you care about and see reading statistics over time.</p>
+        </div>
+        <div class="card">
+          <h3>Customizable reader</h3>
+          <p>Choose the reading mode and layout that feel right, with a smooth, distraction-free experience.</p>
+        </div>
+        <div class="card">
+          <h3>Your sources</h3>
+          <p>Add the online sources you want. The app ships with no built-in content — you stay in control of what you read.</p>
+        </div>
+        <div class="card">
+          <h3>Google Drive sync</h3>
+          <p>Optionally sync your whole library between your devices using your own Google Drive. Off by default.</p>
+        </div>
+        <div class="card">
+          <h3>Private by design</h3>
+          <p>No ads, no analytics, no account needed to read. Everything stays on your device unless you turn on sync.</p>
         </div>
       </div>
     </section>
 
-    <section id="sync" class="section section-alt">
-      <h2>Google Drive sync</h2>
+    <section id="sync" class="section">
+      <h2>Sync with your own Google Drive</h2>
       <p class="lead">
-        DropSauce includes an <strong>optional</strong> feature that lets you sync your library between your own
-        devices using <strong>your own Google Drive</strong>. Sync is off until you choose to sign in.
+        DropSauce includes an <strong>optional</strong> sync feature so your library follows you across devices —
+        stored in <strong>your own Google Drive</strong>, never on any server we run. Sync stays off until you choose
+        to sign in.
       </p>
-      <div class="cards">
-        <div class="card">
-          <h3>Your Drive, your data</h3>
-          <p>Your library is stored as a single file inside your personal Google Drive. It never passes through any server we control.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <div>
+            <h3>Sign in</h3>
+            <p>Sign in with your Google account from the app's sync settings. DropSauce only ever touches files it creates in your Drive.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>You choose what syncs</h3>
-          <p>Pick which parts to sync — favourites, categories, history, progress, bookmarks, tracking, statistics and settings.</p>
+        <div class="step">
+          <span class="step-num">2</span>
+          <div>
+            <h3>Choose what syncs</h3>
+            <p>Pick what to include — favourites, categories, history, progress, bookmarks, tracking, statistics and settings.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>You stay in control</h3>
-          <p>Sign out at any time, or delete all synced data from your Drive directly inside the app.</p>
+        <div class="step">
+          <span class="step-num">3</span>
+          <div>
+            <h3>Stay in control</h3>
+            <p>Sign out anytime, or delete all synced data from your Drive directly inside the app.</p>
+          </div>
         </div>
       </div>
       <p class="note">
-        When you enable sync, DropSauce asks for permission to access only the files it creates in your Google Drive.
-        It does not read or modify any of your other Drive files. Read the full details in our
-        <a href="privacy.html">Privacy Policy</a>.
+        DropSauce can only access the files it creates in your Drive — it can't read or change any of your other files.
+        Full details are in the <a href="privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section id="opensource" class="section section-alt">
+      <h2>Open source &amp; honest</h2>
+      <p class="lead">
+        DropSauce is released under the <strong>GNU GPLv3</strong> license. You're free to use, study, share and
+        modify it. The full source code is available on GitHub.
+      </p>
+      <p class="note">
+        <strong>Disclaimer:</strong> The developer of DropSauce is not affiliated with any content provider.
+        The application itself includes no built-in content; any content is provided by external sources that
+        users add themselves. You are responsible for the sources you choose and for complying with the laws
+        that apply to you. See the <a href="terms.html">Terms of Service</a>.
       </p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>&copy; 2026 DropSauce</span>
+      <span>&copy; 2026 DropSauce · GPLv3</span>
       <nav>
         <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
         <a href="https://github.com/HuzaifaKhalid1311/DropSauce" rel="noopener">GitHub</a>
       </nav>
     </div>
