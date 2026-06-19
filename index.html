@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DropSauce - Open-source manga reader for Android</title>
+    <meta
+      name="description"
+      content="DropSauce is a free, open-source Android manga reader with Material 3 Expressive design, extensions, library tools, offline reading, backups, and optional Google Drive sync."
+    >
+    <meta name="theme-color" content="#111217">
+    <meta property="og:title" content="DropSauce">
+    <meta property="og:description" content="A lightweight, open-source Android manga reader with Material 3 Expressive polish.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drop-sauce.app/">
+    <meta property="og:image" content="https://drop-sauce.app/assets/app-icon-dark.svg">
+    <link rel="canonical" href="https://drop-sauce.app/">
+    <link rel="icon" href="/assets/app-icon-dark.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Fraunces:opsz,wght,SOFT@9..144,650,80&family=Roboto+Flex:opsz,wght,GRAD@8..144,400..760,0&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="/styles.css?v=20260620">
+    <script src="/script.js?v=20260620" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="/" aria-label="DropSauce home">
+        <img src="/assets/app-icon-dark.svg" alt="" width="36" height="36">
+        <span>DropSauce</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#tour">Tour</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#screens">Screens</a>
+      </nav>
+      <a class="icon-button" href="https://github.com/HuzaifaKhalid1311/DropSauce" aria-label="Open DropSauce on GitHub">
+        <span class="material-symbols-rounded" aria-hidden="true">code</span>
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scene" aria-hidden="true">
+          <div class="phone-shot phone-shot-main">
+            <img src="/assets/screens/favorites.jpg" alt="" width="420" height="937">
+          </div>
+          <div class="phone-shot phone-shot-reader">
+            <img src="/assets/screens/reader.jpg" alt="" width="420" height="937">
+          </div>
+          <div class="phone-shot phone-shot-settings">
+            <img src="/assets/screens/settings.jpg" alt="" width="420" height="937">
+          </div>
+          <div class="screen-note note-one">Material 3 Expressive</div>
+          <div class="screen-note note-two">No backend required</div>
+        </div>
+
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Free and open-source Android manga reader</p>
+          <h1 id="hero-title">DropSauce</h1>
+          <p class="lede">
+            A lightweight reader for keeping your manga library organized, comfortable, and yours.
+            Bring your own sources, read offline, track progress, and sync only when you ask it to.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button button-primary" href="https://github.com/HuzaifaKhalid1311/DropSauce/releases/latest">
+              <span class="material-symbols-rounded" aria-hidden="true">download</span>
+              Download APK
+            </a>
+            <a class="button button-secondary" href="https://github.com/HuzaifaKhalid1311/DropSauce">
+              <span class="material-symbols-rounded" aria-hidden="true">terminal</span>
+              Source code
+            </a>
+          </div>
+          <div class="hero-facts" aria-label="Project facts">
+            <span>Android 6.0+</span>
+            <span>GPLv3</span>
+            <span>No built-in manga</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="truth-band" aria-label="Project summary">
+        <div class="truth-item" data-reveal>
+          <span class="material-symbols-rounded" aria-hidden="true">offline_pin</span>
+          <strong>Works offline first</strong>
+          <p>Your library, history, bookmarks, categories, and settings live locally by default.</p>
+        </div>
+        <div class="truth-item" data-reveal>
+          <span class="material-symbols-rounded" aria-hidden="true">extension</span>
+          <strong>Bring your own sources</strong>
+          <p>DropSauce is the reader and organizer. It does not ship with manga or host content.</p>
+        </div>
+        <div class="truth-item" data-reveal>
+          <span class="material-symbols-rounded" aria-hidden="true">cloud_sync</span>
+          <strong>Optional Drive sync</strong>
+          <p>When enabled, sync writes to your own Google Drive app data instead of a developer server.</p>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="about">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">What it is</p>
+          <h2>A practical reader with a little expressive bite.</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="text-panel accent-cyan" data-reveal>
+            <h3>For everyday reading</h3>
+            <p>
+              DropSauce keeps the main loop quick: find a title through sources you add, save it,
+              read it, and pick up from the same spot later. The UI is built around dense manga
+              libraries, not a storefront.
+            </p>
+          </article>
+          <article class="text-panel accent-pink" data-reveal>
+            <h3>For people who tinker</h3>
+            <p>
+              Extension management, source settings, backups, import tools, tracking, and reader
+              controls are available without hiding everything behind a cloud account.
+            </p>
+          </article>
+          <article class="text-panel accent-green" data-reveal>
+            <h3>For open-source use</h3>
+            <p>
+              The app is published under GPLv3, with release APKs on GitHub and code open for
+              inspection, fixes, and contributions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tour-section" id="tour" aria-labelledby="tour-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">App tour</p>
+          <h2 id="tour-title">The important screens, minus the brochure voice.</h2>
+        </div>
+
+        <div class="tour-shell" data-reveal>
+          <div class="tour-tabs" role="tablist" aria-label="DropSauce feature tour">
+            <button class="tour-tab is-active" id="tab-library" role="tab" aria-selected="true" aria-controls="panel-library" data-tour-target="library">
+              <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+              Library
+            </button>
+            <button class="tour-tab" id="tab-reader" role="tab" aria-selected="false" aria-controls="panel-reader" data-tour-target="reader">
+              <span class="material-symbols-rounded" aria-hidden="true">chrome_reader_mode</span>
+              Reader
+            </button>
+            <button class="tour-tab" id="tab-sources" role="tab" aria-selected="false" aria-controls="panel-sources" data-tour-target="sources">
+              <span class="material-symbols-rounded" aria-hidden="true">extension</span>
+              Sources
+            </button>
+            <button class="tour-tab" id="tab-sync" role="tab" aria-selected="false" aria-controls="panel-sync" data-tour-target="sync">
+              <span class="material-symbols-rounded" aria-hidden="true">settings</span>
+              Control
+            </button>
+          </div>
+
+          <div class="tour-stage">
+            <article class="tour-panel is-active" id="panel-library" role="tabpanel" aria-labelledby="tab-library" data-tour-panel="library">
+              <div class="tour-copy">
+                <span class="mini-label">Favorites, categories, progress</span>
+                <h3>Make a library that remembers where you are.</h3>
+                <p>
+                  Favorites, read-later lists, history, bookmarks, reading progress, and stats all
+                  sit close to the reading flow, so the app feels useful after the first chapter.
+                </p>
+              </div>
+              <img src="/assets/screens/favorites.jpg" alt="DropSauce favorites library screen" width="420" height="937">
+            </article>
+
+            <article class="tour-panel" id="panel-reader" role="tabpanel" aria-labelledby="tab-reader" data-tour-panel="reader" hidden>
+              <div class="tour-copy">
+                <span class="mini-label">Reader controls</span>
+                <h3>Reader chrome that gets out of the page.</h3>
+                <p>
+                  The reader supports comfortable navigation, gestures, progress controls, cleaner
+                  haptics, and modes suited to normal pages or long webtoon-style chapters.
+                </p>
+              </div>
+              <img src="/assets/screens/reader.jpg" alt="DropSauce manga reader screen" width="420" height="937">
+            </article>
+
+            <article class="tour-panel" id="panel-sources" role="tabpanel" aria-labelledby="tab-sources" data-tour-panel="sources" hidden>
+              <div class="tour-copy">
+                <span class="mini-label">Extensions</span>
+                <h3>Add sources yourself and keep the reader neutral.</h3>
+                <p>
+                  DropSauce ships as a tool, not a catalog. You choose source and extension
+                  repositories, manage them in-app, and stay responsible for the content you access.
+                </p>
+              </div>
+              <img src="/assets/screens/extensions.jpg" alt="DropSauce extension browsing screen" width="420" height="937">
+            </article>
+
+            <article class="tour-panel" id="panel-sync" role="tabpanel" aria-labelledby="tab-sync" data-tour-panel="sync" hidden>
+              <div class="tour-copy">
+                <span class="mini-label">Settings and sync</span>
+                <h3>Sync, backup, lock, import, and tune without a service account.</h3>
+                <p>
+                  Google Drive sync is optional. Local backups, PDF import, reader settings,
+                  storage controls, app lock, widgets, and update checks are available from the
+                  same Android-first settings surface.
+                </p>
+              </div>
+              <img src="/assets/screens/settings.jpg" alt="DropSauce settings screen" width="420" height="937">
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-section" id="features" aria-labelledby="features-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Feature map</p>
+          <h2 id="features-title">Built for reading, organizing, and carrying your setup forward.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">auto_stories</span>
+            <h3>Flexible reading</h3>
+            <p>Configurable reader behavior, clean controls, progress tracking, and offline downloads when a source supports them.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">collections_bookmark</span>
+            <h3>Library tools</h3>
+            <p>Favorites, categories, bookmarks, history, reading statistics, and per-chapter progress.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">extension</span>
+            <h3>Extension support</h3>
+            <p>Manage external source repositories from inside the app, including sorting and source-specific settings.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">cloud_done</span>
+            <h3>Drive sync</h3>
+            <p>Optional Google Drive sync for library data, history, bookmarks, tracking, stats, settings, and covers.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">history</span>
+            <h3>Backup and restore</h3>
+            <p>Create local backups, restore DropSauce data, and import compatible backups from the wider manga reader ecosystem.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">picture_as_pdf</span>
+            <h3>PDF import</h3>
+            <p>Convert PDF files into readable CBZ chapters when importing folders of local manga files.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">lock</span>
+            <h3>App lock</h3>
+            <p>Protect the app with biometric or device credential support when you want another layer on your library.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">widgets</span>
+            <h3>Android widgets</h3>
+            <p>Home-screen widgets for continue reading, favorites, and reading stats keep common actions nearby.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="material-symbols-rounded" aria-hidden="true">system_update</span>
+            <h3>In-app updates</h3>
+            <p>Update from inside the app, or install release APKs directly from GitHub Releases.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section source-section" aria-labelledby="sources-title">
+        <div class="split-layout">
+          <div class="source-copy" data-reveal>
+            <p class="eyebrow">Important by design</p>
+            <h2 id="sources-title">DropSauce is not a manga provider.</h2>
+            <p>
+              The app itself does not host, distribute, or bundle manga. It is a reader and library
+              manager for sources you choose to add. That distinction is part of the product, not a
+              footnote.
+            </p>
+            <a class="inline-link" href="/terms">
+              Read the terms
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+          <div class="source-steps" data-reveal>
+            <div class="step-item">
+              <span>01</span>
+              <p>Install the APK from GitHub Releases.</p>
+            </div>
+            <div class="step-item">
+              <span>02</span>
+              <p>Add the extension or source repository you trust.</p>
+            </div>
+            <div class="step-item">
+              <span>03</span>
+              <p>Build a personal library with favorites, categories, and progress.</p>
+            </div>
+            <div class="step-item">
+              <span>04</span>
+              <p>Back up locally or sync privately through your own Google Drive.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section privacy-section" id="privacy" aria-labelledby="privacy-title">
+        <div class="privacy-visual" data-reveal>
+          <img src="/assets/screens/settings.jpg" alt="DropSauce settings showing Google Drive sync and privacy-related controls" width="420" height="937">
+        </div>
+        <div class="privacy-copy" data-reveal>
+          <p class="eyebrow">Data handling</p>
+          <h2 id="privacy-title">Offline by default. Sync only when you choose it.</h2>
+          <p>
+            DropSauce has no backend server. Without sync, app data remains on your device. When
+            Google Drive sync is enabled, the app reads and writes its own synchronization file in
+            your Drive account so your library can move between devices.
+          </p>
+          <div class="privacy-list" aria-label="Privacy notes">
+            <div>
+              <span class="material-symbols-rounded" aria-hidden="true">storage</span>
+              <p>Local data includes favorites, categories, history, bookmarks, tracking, stats, and settings.</p>
+            </div>
+            <div>
+              <span class="material-symbols-rounded" aria-hidden="true">visibility_off</span>
+              <p>The app cannot read or modify arbitrary files in your Google Drive.</p>
+            </div>
+            <div>
+              <span class="material-symbols-rounded" aria-hidden="true">delete</span>
+              <p>You can sign out, delete synced data, revoke access, or uninstall to remove local data.</p>
+            </div>
+          </div>
+          <a class="button button-dark" href="/privacy">
+            <span class="material-symbols-rounded" aria-hidden="true">policy</span>
+            Privacy policy
+          </a>
+        </div>
+      </section>
+
+      <section class="section screenshots-section" id="screens" aria-labelledby="screens-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Screenshots</p>
+          <h2 id="screens-title">Actual screens from the app.</h2>
+        </div>
+        <div class="screens-grid">
+          <figure class="screen-card tall" data-reveal>
+            <img src="/assets/screens/details.jpg" alt="Manga details page with read later action, chapter count, tags, and floating read button" width="420" height="937" loading="lazy">
+            <figcaption>Details page</figcaption>
+          </figure>
+          <figure class="screen-card" data-reveal>
+            <img src="/assets/screens/favorites.jpg" alt="Favorites library grid with search, filters, and bottom navigation" width="420" height="937" loading="lazy">
+            <figcaption>Library</figcaption>
+          </figure>
+          <figure class="screen-card" data-reveal>
+            <img src="/assets/screens/reader.jpg" alt="Reader screen with chapter title and bottom progress controls" width="420" height="937" loading="lazy">
+            <figcaption>Reader</figcaption>
+          </figure>
+          <figure class="screen-card" data-reveal>
+            <img src="/assets/screens/extensions.jpg" alt="Extensions page with genre chips and manga grid" width="420" height="937" loading="lazy">
+            <figcaption>Extensions</figcaption>
+          </figure>
+          <figure class="screen-card" data-reveal>
+            <img src="/assets/screens/settings.jpg" alt="Settings list with sync, appearance, reader, storage, downloads, backups, and services" width="420" height="937" loading="lazy">
+            <figcaption>Settings</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section community-section" aria-labelledby="community-title">
+        <div class="community-copy" data-reveal>
+          <p class="eyebrow">Open source</p>
+          <h2 id="community-title">Readable code, public releases, practical contributions.</h2>
+          <p>
+            DropSauce is GPLv3 software shaped by the open-source Android manga reader community,
+            including ideas and groundwork from Kotatsu and Mihon. Bug fixes, focused patches, and
+            clear UI reports are welcome.
+          </p>
+        </div>
+        <div class="community-links" data-reveal>
+          <a href="https://github.com/HuzaifaKhalid1311/DropSauce">
+            <span class="material-symbols-rounded" aria-hidden="true">code_blocks</span>
+            Source code
+          </a>
+          <a href="https://github.com/HuzaifaKhalid1311/DropSauce/issues">
+            <span class="material-symbols-rounded" aria-hidden="true">bug_report</span>
+            Issues
+          </a>
+          <a href="https://github.com/HuzaifaKhalid1311/DropSauce/releases">
+            <span class="material-symbols-rounded" aria-hidden="true">new_releases</span>
+            Releases
+          </a>
+          <a href="https://discord.com/channels/1435615296202477581/1435650246163169382/1435651186140119091">
+            <span class="material-symbols-rounded" aria-hidden="true">forum</span>
+            Discord
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="/">
+          <img src="/assets/app-icon-dark.svg" alt="" width="34" height="34">
+          <span>DropSauce</span>
+        </a>
+        <p>Free, open-source manga reading for Android. No built-in manga. No developer backend.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="https://github.com/HuzaifaKhalid1311/DropSauce">GitHub</a>
+      </nav>
+    </footer>
+  </body>
+</html>
