@@ -1,6 +1,54 @@
 const header = document.querySelector("[data-site-header]");
 document.documentElement.classList.add("js");
 
+const screenPool = [
+  { src: "/assets/screens/favorites.jpg", label: "favorites library" },
+  { src: "/assets/screens/reader.jpg", label: "reader" },
+  { src: "/assets/screens/settings.jpg", label: "settings" },
+  { src: "/assets/screens/extensions.jpg", label: "extensions" },
+  { src: "/assets/screens/details.jpg", label: "details" },
+  { src: "/assets/screens/details-compact.jpg", label: "compact details" },
+  { src: "/assets/screens/details-centralized.jpg", label: "centered details" },
+  { src: "/assets/screens/chapters-list.jpg", label: "chapters list" },
+  { src: "/assets/screens/downloads.jpg", label: "downloads" },
+  { src: "/assets/screens/appearance-settings.jpg", label: "appearance settings" },
+  { src: "/assets/screens/about.jpg", label: "about page" },
+];
+
+const heroImages = Array.from(document.querySelectorAll("[data-random-hero-image]"));
+const shuffledScreenPool = screenPool
+  .map((screenshot) => ({ screenshot, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({ screenshot }) => screenshot);
+
+heroImages.forEach((image, index) => {
+  const screenshot = shuffledScreenPool[index % shuffledScreenPool.length];
+  image.src = screenshot.src;
+  image.alt = "";
+});
+
+const latestApkLink = document.querySelector("[data-latest-apk-link]");
+
+if (latestApkLink && "fetch" in window) {
+  fetch("https://api.github.com/repos/HuzaifaKhalid1311/DropSauce/releases/latest", {
+    headers: { Accept: "application/vnd.github+json" },
+  })
+    .then((response) => {
+      if (!response.ok) throw new Error("Latest release unavailable");
+      return response.json();
+    })
+    .then((release) => {
+      const apk = release.assets?.find((asset) => asset.name?.toLowerCase().endsWith(".apk"));
+      if (!apk?.browser_download_url) return;
+      latestApkLink.href = apk.browser_download_url;
+      latestApkLink.setAttribute("download", apk.name);
+      latestApkLink.setAttribute("aria-label", `Download ${apk.name}`);
+    })
+    .catch(() => {
+      latestApkLink.removeAttribute("download");
+    });
+}
+
 const updateHeader = () => {
   if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 8);

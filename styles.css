@@ -231,20 +231,27 @@ a {
 
 .phone-shot {
   position: absolute;
-  width: min(28vw, 310px);
-  min-width: 210px;
-  overflow: hidden;
-  border: 1px solid rgb(255 255 255 / 68%);
-  border-radius: 34px;
-  background: #111217;
-  box-shadow: var(--shadow);
+  width: min(22vw, 260px);
+  min-width: 190px;
   transform: translate3d(calc(var(--mx, 0) * 10px), calc(var(--my, 0) * 10px), 0) rotate(var(--tilt, 0deg));
   transition: transform 280ms ease;
 }
 
-.phone-shot img {
+.phone-frame {
+  --phone-radius: 26px;
+  aspect-ratio: 420 / 937;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 68%);
+  border-radius: var(--phone-radius);
+  background: #111217;
+  box-shadow: var(--shadow);
+}
+
+.phone-frame img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .phone-shot-main {
@@ -256,40 +263,19 @@ a {
 .phone-shot-reader {
   right: 35%;
   top: 11%;
-  width: min(24vw, 250px);
+  width: min(19vw, 215px);
   opacity: 0.9;
+  --phone-radius: 22px;
   --tilt: 7deg;
 }
 
 .phone-shot-settings {
   right: 2%;
   top: 14%;
-  width: min(23vw, 242px);
+  width: min(18vw, 205px);
   opacity: 0.86;
+  --phone-radius: 22px;
   --tilt: 9deg;
-}
-
-.screen-note {
-  position: absolute;
-  border: 1px solid rgb(17 18 23 / 10%);
-  border-radius: 999px;
-  padding: 10px 14px;
-  color: var(--ink);
-  background: rgb(255 255 255 / 78%);
-  box-shadow: var(--shadow-soft);
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-.note-one {
-  right: 44%;
-  bottom: 15%;
-}
-
-.note-two {
-  right: 9%;
-  bottom: 12%;
 }
 
 .hero-copy {
@@ -399,23 +385,6 @@ p {
 .button-dark {
   color: white;
   background: var(--ink);
-}
-
-.hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 22px;
-}
-
-.hero-facts span {
-  border: 1px solid rgb(17 18 23 / 10%);
-  border-radius: 999px;
-  padding: 8px 12px;
-  color: var(--ink-soft);
-  background: rgb(255 255 255 / 70%);
-  font-size: 0.9rem;
-  font-weight: 720;
 }
 
 .truth-band {
@@ -599,11 +568,15 @@ p {
 
 .tour-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 350px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 290px);
   gap: 20px;
   align-items: end;
   min-height: 560px;
   padding: 40px 40px 0;
+}
+
+.tour-panel-wide {
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
 }
 
 .tour-panel[hidden] {
@@ -625,13 +598,26 @@ p {
   font-size: 1.04rem;
 }
 
-.tour-panel img {
-  width: min(100%, 340px);
+.tour-visual {
+  --phone-radius: 26px;
+  width: min(100%, 250px);
   justify-self: center;
   border: 1px solid rgb(255 255 255 / 18%);
-  border-bottom: 0;
-  border-radius: 32px 32px 0 0;
   box-shadow: 0 26px 80px rgb(0 0 0 / 46%);
+}
+
+.tour-duo {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 16px;
+  align-self: end;
+  min-width: 0;
+  padding-bottom: 24px;
+}
+
+.tour-duo .tour-visual {
+  width: min(46%, 218px);
 }
 
 .feature-card {
@@ -727,20 +713,7 @@ p {
 }
 
 .privacy-section {
-  display: grid;
-  grid-template-columns: minmax(250px, 360px) minmax(0, 1fr);
-  gap: 54px;
-  align-items: center;
-}
-
-.privacy-visual {
-  justify-self: center;
-  width: min(100%, 320px);
-}
-
-.privacy-visual img {
-  border-radius: 34px;
-  box-shadow: var(--shadow);
+  max-width: 920px;
 }
 
 .privacy-copy p {
@@ -775,55 +748,6 @@ p {
 .privacy-list p {
   margin: 0;
   color: var(--ink-soft);
-}
-
-.screenshots-section {
-  max-width: none;
-  background: #edf7f7;
-}
-
-.screenshots-section .section-heading,
-.screens-grid {
-  max-width: var(--max);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.screens-grid {
-  display: grid;
-  grid-template-columns: 1.1fr repeat(4, minmax(0, 0.8fr));
-  gap: 14px;
-  align-items: start;
-  overflow-x: auto;
-  padding-bottom: 12px;
-  scrollbar-color: var(--cyan) transparent;
-}
-
-.screen-card {
-  min-width: 190px;
-  margin: 0;
-  border: 1px solid rgb(17 18 23 / 10%);
-  border-radius: 8px;
-  padding: 10px;
-  background: white;
-  box-shadow: 0 10px 24px rgb(17 18 23 / 8%);
-}
-
-.screen-card.tall {
-  min-width: 236px;
-}
-
-.screen-card img {
-  width: 100%;
-  border-radius: 22px;
-}
-
-.screen-card figcaption {
-  padding: 12px 4px 2px;
-  color: var(--ink-soft);
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  font-size: 0.92rem;
-  font-weight: 700;
 }
 
 .community-section {
@@ -999,8 +923,9 @@ p {
   }
 
   .phone-shot {
-    width: 230px;
+    width: 205px;
     min-width: 0;
+    --phone-radius: 22px;
   }
 
   .phone-shot-main {
@@ -1012,36 +937,25 @@ p {
     right: 56%;
     top: auto;
     bottom: 105px;
-    width: 190px;
+    width: 165px;
   }
 
   .phone-shot-settings {
     right: 14%;
     top: auto;
     bottom: 112px;
-    width: 190px;
-  }
-
-  .note-one {
-    right: 45%;
-    bottom: 30px;
-  }
-
-  .note-two {
-    right: 12%;
-    bottom: 66px;
+    width: 165px;
   }
 
   .tour-shell,
   .tour-panel,
   .split-layout,
-  .privacy-section,
   .community-section {
     grid-template-columns: 1fr;
   }
 
   .tour-tabs {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .tour-tab {
@@ -1050,10 +964,6 @@ p {
 
   .tour-panel {
     padding: 30px 30px 0;
-  }
-
-  .privacy-visual {
-    order: 2;
   }
 }
 
@@ -1080,16 +990,13 @@ p {
 
   .phone-shot-main {
     right: 34%;
-    width: 210px;
+    width: 180px;
   }
 
   .phone-shot-reader,
   .phone-shot-settings {
-    width: 168px;
-  }
-
-  .screen-note {
-    display: none;
+    width: 140px;
+    --phone-radius: 18px;
   }
 
   .truth-band,
@@ -1120,13 +1027,16 @@ p {
     padding-bottom: 24px;
   }
 
-  .tour-panel img {
-    max-height: 520px;
-    width: auto;
+  .tour-visual {
+    width: min(100%, 230px);
   }
 
-  .screens-grid {
-    grid-template-columns: repeat(5, 218px);
+  .tour-duo {
+    gap: 12px;
+  }
+
+  .tour-duo .tour-visual {
+    width: min(48%, 190px);
   }
 
   .community-links {
@@ -1173,26 +1083,25 @@ p {
     width: 100%;
   }
 
-  .hero-facts span {
-    font-size: 0.84rem;
-  }
-
   .phone-shot-main {
     right: 28%;
     bottom: 14px;
-    width: 160px;
+    width: 144px;
+    --phone-radius: 18px;
   }
 
   .phone-shot-reader {
     right: 55%;
     bottom: 64px;
-    width: 120px;
+    width: 108px;
+    --phone-radius: 15px;
   }
 
   .phone-shot-settings {
     right: 2%;
     bottom: 66px;
-    width: 120px;
+    width: 108px;
+    --phone-radius: 15px;
   }
 
   .section {
@@ -1215,8 +1124,18 @@ p {
     padding: 24px 18px 0;
   }
 
-  .tour-panel img {
-    max-height: 440px;
+  .tour-visual {
+    width: min(100%, 210px);
+    --phone-radius: 22px;
+  }
+
+  .tour-duo {
+    padding-bottom: 18px;
+  }
+
+  .tour-duo .tour-visual {
+    width: min(48%, 156px);
+    --phone-radius: 18px;
   }
 
   .step-item {
@@ -1226,10 +1145,6 @@ p {
   .step-item span {
     width: 44px;
     height: 44px;
-  }
-
-  .privacy-section {
-    gap: 32px;
   }
 
   .privacy-list div {
