@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Guide - DropSauce</title>
+    <meta
+      name="description"
+      content="Step-by-step guide for DropSauce: getting started, adding sources, using the reader, managing your library, backups, Google Drive sync, tracking, and more."
+    >
+    <meta name="theme-color" content="#111217">
+    <link rel="canonical" href="https://drop-sauce.app/guide">
+    <link rel="icon" href="/assets/app-icon-dark.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Fraunces:opsz,wght,SOFT@9..144,650,80&family=Roboto+Flex:opsz,wght,GRAD@8..144,400..760,0&family=Space+Grotesk:wght@500;700&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="/styles.css?v=20260620-3">
+    <link rel="stylesheet" href="/guide/guide.css?v=20260623-1">
+    <script src="/script.js?v=20260620-3" defer></script>
+    <script src="/guide/guide.js?v=20260623-1" defer></script>
+  </head>
+  <body class="guide-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <a class="brand" href="/" aria-label="DropSauce home">
+        <img src="/assets/app-icon-dark.svg" alt="" width="36" height="36">
+        <span>DropSauce</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/#tour">Tour</a>
+        <a href="/#features">Features</a>
+        <a href="/guide" aria-current="page">Guide</a>
+        <a href="/#privacy">Privacy</a>
+      </nav>
+      <a class="icon-button" href="https://github.com/HuzaifaKhalid1311/DropSauce" aria-label="Open DropSauce on GitHub">
+        <span class="material-symbols-rounded" aria-hidden="true">code</span>
+      </a>
+    </header>
+
+    <div class="guide-layout" id="main">
+
+      <!-- Sidebar navigation -->
+      <aside class="guide-sidebar" aria-label="Guide navigation">
+        <div class="guide-sidebar-inner">
+          <p class="guide-sidebar-label">On this page</p>
+          <nav class="guide-nav" aria-label="Guide sections">
+            <a class="guide-nav-link is-active" href="#getting-started" id="nav-getting-started">
+              <span class="material-symbols-rounded" aria-hidden="true">rocket_launch</span>
+              Getting started
+            </a>
+            <a class="guide-nav-link" href="#sources" id="nav-sources">
+              <span class="material-symbols-rounded" aria-hidden="true">extension</span>
+              Sources & extensions
+            </a>
+            <a class="guide-nav-link" href="#library" id="nav-library">
+              <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+              Library & favorites
+            </a>
+            <a class="guide-nav-link" href="#categories" id="nav-categories">
+              <span class="material-symbols-rounded" aria-hidden="true">folder</span>
+              Categories
+            </a>
+            <a class="guide-nav-link" href="#reader" id="nav-reader">
+              <span class="material-symbols-rounded" aria-hidden="true">chrome_reader_mode</span>
+              Reader
+            </a>
+            <a class="guide-nav-link" href="#downloads" id="nav-downloads">
+              <span class="material-symbols-rounded" aria-hidden="true">download</span>
+              Downloads & local files
+            </a>
+            <a class="guide-nav-link" href="#backups" id="nav-backups">
+              <span class="material-symbols-rounded" aria-hidden="true">history</span>
+              Backups & restore
+            </a>
+            <a class="guide-nav-link" href="#sync" id="nav-sync">
+              <span class="material-symbols-rounded" aria-hidden="true">cloud_done</span>
+              Google Drive sync
+            </a>
+            <a class="guide-nav-link" href="#tracking" id="nav-tracking">
+              <span class="material-symbols-rounded" aria-hidden="true">track_changes</span>
+              Tracking
+            </a>
+            <a class="guide-nav-link" href="#applock" id="nav-applock">
+              <span class="material-symbols-rounded" aria-hidden="true">lock</span>
+              App lock
+            </a>
+            <a class="guide-nav-link" href="#widgets" id="nav-widgets">
+              <span class="material-symbols-rounded" aria-hidden="true">widgets</span>
+              Widgets
+            </a>
+            <a class="guide-nav-link" href="#migration" id="nav-migration">
+              <span class="material-symbols-rounded" aria-hidden="true">swap_horiz</span>
+              Migrating from other apps
+            </a>
+            <a class="guide-nav-link" href="#updates" id="nav-updates">
+              <span class="material-symbols-rounded" aria-hidden="true">system_update</span>
+              Updates & troubleshooting
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main guide content -->
+      <main class="guide-main" id="guide-content">
+
+        <!-- Page header -->
+        <div class="guide-page-header">
+          <p class="eyebrow">User guide</p>
+          <h1>How to use DropSauce</h1>
+          <p class="guide-intro">
+            Simple, plain-language explanations for every part of the app — from adding your first source to syncing your library between devices.
+          </p>
+        </div>
+
+        <!-- ── GETTING STARTED ───────────────────────────────────────── -->
+        <section class="guide-section" id="getting-started" aria-labelledby="h2-getting-started">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">rocket_launch</span>
+            </span>
+            <h2 id="h2-getting-started">Getting started</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Installing the app</h3>
+            <p>DropSauce is not on the Play Store. You install it directly from GitHub Releases as an APK.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>
+                  Go to the <a href="https://github.com/HuzaifaKhalid1311/DropSauce/releases/latest" class="guide-link">latest release on GitHub</a> and tap <strong>Download APK</strong>.
+                </div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>
+                  When Android asks if you want to allow installs from unknown sources, tap <strong>Settings</strong> and enable it for your browser or file manager. This is a one-time step.
+                </div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>
+                  Return to the download and tap <strong>Install</strong>. The app will appear in your launcher.
+                </div>
+              </li>
+            </ol>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>You do not need an account. DropSauce works fully offline from the moment it is installed.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>First launch — choosing source languages</h3>
+            <p>The first time you open the app, a screen will appear asking which languages you want sources for. This filters the list of available sources down to just the ones relevant to you.</p>
+            <p>By default, the app selects the languages that match your Android system language. You can change this later from <strong>Settings → Sources</strong>.</p>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>If you read manga in multiple languages, select all of them here. You can always hide individual sources you don't use.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>The five main tabs</h3>
+            <p>The bottom navigation bar has five sections:</p>
+            <ul class="guide-list">
+              <li><strong>Favorites</strong> — Your saved manga, organized by category.</li>
+              <li><strong>History</strong> — Every manga you have opened, sorted by most recent.</li>
+              <li><strong>Explore</strong> — Browse and search across all your installed sources.</li>
+              <li><strong>Feed</strong> — New chapter notifications for manga in your favorites (requires the tracker to be on).</li>
+              <li><strong>Suggestions</strong> — Manga recommendations based on your library.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ── SOURCES & EXTENSIONS ──────────────────────────────────── -->
+        <section class="guide-section" id="sources" aria-labelledby="h2-sources">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">extension</span>
+            </span>
+            <h2 id="h2-sources">Sources & extensions</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What are sources?</h3>
+            <p>DropSauce does not come with manga built in. It is a reader — you bring your own sources. A <em>source</em> is a website or service the app can fetch manga from. Sources come packaged as <em>extensions</em>, which you install through an extension repository.</p>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>DropSauce does not host, distribute, or endorse any specific extension repositories. You are responsible for adding only repositories you trust.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Adding an extension repository</h3>
+            <p>Before you can install extensions, you need to point the app at a repository that lists them.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Open <strong>Settings → Extensions</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap the <strong>+</strong> button and paste the URL of the extension repository.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>The app will download the repository index. You will see a list of available extensions.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Installing an extension</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Extensions</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Find the extension you want and tap <strong>Install</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Android will ask you to confirm the installation. Tap <strong>Install</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>Once installed, the source shows up in <strong>Explore → Manage sources</strong>.</div>
+              </li>
+            </ol>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>Extensions are separate APKs signed by whoever runs the repository. Only install from repositories you trust.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Source-specific settings</h3>
+            <p>Many sources let you configure things like domain, login, or content filters. To find these:</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Extensions</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Find the installed source and tap the settings icon next to it.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Managing which sources are visible</h3>
+            <p>You can pin, hide, or reorder sources in <strong>Explore → Manage sources</strong>. Pinned sources appear at the top of the Explore tab. Hidden sources disappear from browsing but are not uninstalled.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Alternative sources for a manga</h3>
+            <p>If a manga is no longer available on its current source, or you just want to try a different one, DropSauce can find the same title on your other installed sources.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Open the manga details screen.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap the <strong>⋮ menu</strong> and select <strong>Find alternatives</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>The app searches your other sources for a matching title. Tap one to switch.</div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ── LIBRARY & FAVORITES ───────────────────────────────────── -->
+        <section class="guide-section" id="library" aria-labelledby="h2-library">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">favorite</span>
+            </span>
+            <h2 id="h2-library">Library & favorites</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Adding manga to your library</h3>
+            <p>Tapping the heart icon on any manga details page adds it to your favorites. From that point on, it appears in the <strong>Favorites</strong> tab and is tracked for new chapters.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Viewing reading history</h3>
+            <p>The <strong>History</strong> tab shows every manga you have opened, in the order you last read them. This is your full reading log — it is not limited to favorites. You can clear individual entries or wipe the entire history from the <strong>⋮ menu</strong>.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Bookmarks</h3>
+            <p>Bookmarks let you save specific pages inside a chapter. While reading, long-press on a page and tap <strong>Bookmark</strong>. To view all your bookmarks, go to the manga details page and tap the bookmark icon, or find the Bookmarks section under the manga's detail screen.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Reading statistics</h3>
+            <p>DropSauce tracks how many chapters you have read, how many pages, and how much time you have spent reading. To view your stats, tap <strong>Statistics</strong> from the main screen menu or from your profile area.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Update tracker (new chapter feed)</h3>
+            <p>The tracker checks your favorites for new chapters in the background. When new chapters are found, a notification appears and the <strong>Feed</strong> tab updates. You can adjust how often checks run in <strong>Settings → Tracker</strong>.</p>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Tracking only works for manga that are saved as favorites. History-only manga are not checked.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Manga suggestions</h3>
+            <p>The <strong>Suggestions</strong> tab recommends manga based on what is already in your library. The app looks at genres, authors, and tags from your favorites to find similar titles on your installed sources. These suggestions update automatically in the background.</p>
+          </div>
+        </section>
+
+        <!-- ── CATEGORIES ────────────────────────────────────────────── -->
+        <section class="guide-section" id="categories" aria-labelledby="h2-categories">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">folder</span>
+            </span>
+            <h2 id="h2-categories">Categories</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What categories are for</h3>
+            <p>Categories let you group your favorites however you like — for example "Reading", "On hold", "Completed", or by genre. A manga can belong to more than one category.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Creating a category</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Open the <strong>Favorites</strong> tab.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap the <strong>⋮ menu</strong> and select <strong>Manage categories</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Tap the <strong>+</strong> button and type a name for your new category.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Adding manga to a category</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Open the details page for any manga in your favorites.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap the heart icon again (or the <strong>Categories</strong> chip below it).</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>A sheet appears with your categories. Select as many as you want and tap <strong>Save</strong>.</div>
+              </li>
+            </ol>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>You can also long-press a manga card in the Favorites tab and use the context menu to assign categories in bulk.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Filtering the Favorites tab by category</h3>
+            <p>In the Favorites tab, swipe the tab row at the top or tap a category name to filter the view to just that category. Tap <strong>All</strong> to return to the full list.</p>
+          </div>
+        </section>
+
+        <!-- ── READER ─────────────────────────────────────────────────── -->
+        <section class="guide-section" id="reader" aria-labelledby="h2-reader">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">chrome_reader_mode</span>
+            </span>
+            <h2 id="h2-reader">Reader</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Reading modes</h3>
+            <p>DropSauce supports several reading modes. You can set a default in <strong>Settings → Reader</strong>, or change it per-chapter from the reader's bottom sheet.</p>
+            <ul class="guide-list">
+              <li><strong>Standard (right to left)</strong> — Classic manga page layout. Tap or swipe right to go forward.</li>
+              <li><strong>Standard (left to right)</strong> — For webtoons and manhwa formatted as pages. Tap or swipe left to go forward.</li>
+              <li><strong>Webtoon (vertical scroll)</strong> — Continuous vertical scroll. Best for tall-strip webtoons.</li>
+              <li><strong>Reversed webtoon</strong> — Vertical scroll but pages are flipped, useful for some right-to-left webtoons.</li>
+            </ul>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>If a chapter feels backwards, you probably have the wrong reading direction selected. Tap the center of the screen to open the reader controls and switch modes.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Opening the reader controls</h3>
+            <p>Tap the center of the screen. A top bar and bottom bar will appear with the chapter title, progress slider, chapter list, and the settings gear icon.</p>
+            <ul class="guide-list">
+              <li>The <strong>progress slider</strong> at the bottom lets you jump to any page.</li>
+              <li>The <strong>chapter list</strong> icon lets you jump to a different chapter.</li>
+              <li>The <strong>gear icon</strong> opens quick reader settings.</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Tap zones (navigation areas)</h3>
+            <p>By default, the left edge of the screen goes to the previous page and the right edge goes to the next page. You can customize exactly which parts of the screen do what in <strong>Settings → Reader → Tap grid</strong>.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Zoom modes</h3>
+            <p>In <strong>Settings → Reader</strong>, the zoom setting controls how pages fill the screen:</p>
+            <ul class="guide-list">
+              <li><strong>Fit to screen</strong> — The whole page is visible at once.</li>
+              <li><strong>Fit to width</strong> — The page is as wide as the screen, you scroll vertically.</li>
+              <li><strong>Fit to height</strong> — The page is as tall as the screen, you scroll horizontally.</li>
+              <li><strong>Original size</strong> — The page is shown at its actual pixel size.</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Background color</h3>
+            <p>In <strong>Settings → Reader</strong>, you can set the background behind pages to black, white, or gray. Black works well at night; white suits day reading with white-background manga.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Page turn animation</h3>
+            <p>In <strong>Settings → Reader</strong>, you can choose a page turn animation: none, slider, or the curved page-flip effect. Turning animation off gives the snappiest feel.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Screen rotation</h3>
+            <p>The reader can lock to portrait or landscape independently of your system rotation. Tap the screen while reading, then tap the rotation icon in the top bar to cycle through: follow system → portrait → landscape.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Saving a page as a bookmark</h3>
+            <p>Long-press any page while reading and tap <strong>Bookmark this page</strong>. You can find all bookmarks on the manga details screen.</p>
+          </div>
+        </section>
+
+        <!-- ── DOWNLOADS & LOCAL FILES ───────────────────────────────── -->
+        <section class="guide-section" id="downloads" aria-labelledby="h2-downloads">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">download</span>
+            </span>
+            <h2 id="h2-downloads">Downloads & local files</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Downloading chapters for offline reading</h3>
+            <p>Not all sources support downloads — it depends on whether the source extension allows it. When downloads are supported:</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Open the manga details page.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Long-press a chapter (or tap the checkbox to select multiple chapters).</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Tap the <strong>Download</strong> icon in the action bar that appears.</div>
+              </li>
+            </ol>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Downloads run as a background service. You can keep reading other manga while chapters download. Check progress from the notification shade or the download queue in Settings.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Where downloads are stored</h3>
+            <p>By default, downloads go to the app's private storage. You can change the storage location to an SD card or another folder in <strong>Settings → Storage</strong>.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Reading manga from local files (CBZ, ZIP, folder)</h3>
+            <p>If you have manga saved on your device as CBZ files, ZIP archives, or folders of images, DropSauce can read them without a source.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Explore → Local storage</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Navigate to the folder containing your manga files and tap it.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>The app will list found manga. Tap one to read it.</div>
+              </li>
+            </ol>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>Organize each manga as its own folder with chapter subfolders or numbered CBZ files. The app uses file and folder names to determine chapter order.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Importing PDF files</h3>
+            <p>DropSauce can convert PDF files into readable CBZ chapters when you point it at a local folder. The PDF import happens automatically when the app encounters a PDF inside a scanned local directory. No extra steps are needed — just include the PDF in your manga folder.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Freeing up storage</h3>
+            <p>To delete downloaded chapters, go to the manga details page, long-press a downloaded chapter, and tap <strong>Delete download</strong>. To manage all downloads at once, go to <strong>Settings → Storage → Clear downloads</strong>.</p>
+          </div>
+        </section>
+
+        <!-- ── BACKUPS & RESTORE ──────────────────────────────────────── -->
+        <section class="guide-section" id="backups" aria-labelledby="h2-backups">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">history</span>
+            </span>
+            <h2 id="h2-backups">Backups & restore</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What a backup includes</h3>
+            <p>A DropSauce backup saves everything about your library state to a single file:</p>
+            <ul class="guide-list">
+              <li>Favorites and their categories</li>
+              <li>Reading history and per-chapter progress</li>
+              <li>Bookmarks</li>
+              <li>Reading statistics</li>
+              <li>App settings</li>
+            </ul>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Backups do <em>not</em> include downloaded manga files. Those stay in your storage folder.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Creating a backup</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Data &amp; backup</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap <strong>Create backup</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Choose a location to save the backup file (your Downloads folder is a safe choice).</div>
+              </li>
+            </ol>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>Make a backup before doing anything risky like clearing app data or moving to a new phone. Keep the backup file somewhere outside the phone — cloud storage, a PC — so it survives a factory reset.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Restoring from a backup</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Data &amp; backup</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap <strong>Restore backup</strong> and locate your backup file.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>The app will merge the backup with your current data. You can choose to overwrite or merge.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Restoring backups from Kotatsu or Mihon</h3>
+            <p>DropSauce can import backups created by the original <strong>Kotatsu</strong> app. This lets you move your library without starting over. Use the same <strong>Restore backup</strong> flow — Kotatsu backup files are auto-detected.</p>
+            <p>For <strong>Mihon</strong> (and Tachiyomi-compatible) backups, go to <strong>Settings → Data &amp; backup → Import from Mihon</strong>. The app will import favorites, history, categories, and reading progress.</p>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Source compatibility is not guaranteed when importing from another app. If a manga was on a source that DropSauce doesn't have installed, it will import the metadata but won't be able to load new chapters until you install a matching extension.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── GOOGLE DRIVE SYNC ──────────────────────────────────────── -->
+        <section class="guide-section" id="sync" aria-labelledby="h2-sync">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">cloud_done</span>
+            </span>
+            <h2 id="h2-sync">Google Drive sync</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What sync does</h3>
+            <p>Google Drive sync keeps your library in step across multiple Android devices. When you read a chapter on one phone, the progress shows up on your tablet the next time it syncs. Everything synced goes into a hidden, private file inside your own Google Drive that only DropSauce can access.</p>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Sync is entirely optional. The app works perfectly without it. No Google account is required.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>What gets synced</h3>
+            <ul class="guide-list">
+              <li>Favorites and categories</li>
+              <li>Reading history and chapter progress</li>
+              <li>Bookmarks</li>
+              <li>Tracking data</li>
+              <li>Reading statistics</li>
+              <li>App settings</li>
+              <li>Manga cover images (optional, can be disabled to save Drive space)</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Enabling sync</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Sync</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap <strong>Sign in with Google</strong> and pick your account.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>The app will ask for permission to access its own Drive data folder. Grant it.</div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>Tap <strong>Sync now</strong> to do an immediate sync, or let it run on its automatic schedule.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Setting up sync on a second device</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Install DropSauce on the second device.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Go to <strong>Settings → Sync</strong> and sign in with the <em>same</em> Google account.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Tap <strong>Sync now</strong>. The app will pull your library from Drive.</div>
+              </li>
+            </ol>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>Extensions are not synced. You need to install the same extensions on each device separately. The manga metadata will be there waiting — just add the matching source.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Deleting synced data</h3>
+            <p>In <strong>Settings → Sync</strong>, tap <strong>Delete all synced data</strong>. This removes the sync file from your Google Drive. Your local data on the device is untouched. You can sign out at any time from the same screen.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>How merge conflicts are handled</h3>
+            <p>If you read on two devices without syncing in between, the app merges both sets of progress when you next sync. Chapters marked as read on either device stay marked as read. No data is silently lost.</p>
+          </div>
+        </section>
+
+        <!-- ── TRACKING ───────────────────────────────────────────────── -->
+        <section class="guide-section" id="tracking" aria-labelledby="h2-tracking">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">track_changes</span>
+            </span>
+            <h2 id="h2-tracking">Tracking</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What tracking does</h3>
+            <p>Tracking (also called scrobbling) automatically updates your manga list on external services as you read. For example, when you finish a chapter in DropSauce, it can mark that chapter as read on AniList or Shikimori so your list there stays accurate without you having to update it manually.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Supported services</h3>
+            <p>DropSauce supports logging in to and syncing with multiple tracking services. Check <strong>Settings → Tracking</strong> for the current list of supported services.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Setting up tracking</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Tracking</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap the service you want to use and sign in with your account for that service.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Once signed in, go to the details page of any manga in your favorites.</div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>Tap the tracking chip or the <strong>Track</strong> button and search for the matching entry on the service.</div>
+              </li>
+              <li>
+                <span class="step-num">5</span>
+                <div>Select it and save. From now on, reading chapters in the app updates your score on the service automatically.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Tracking is per-manga</h3>
+            <p>You link each manga individually to its entry on the tracking service. This is intentional — some manga have multiple versions or seasons, and automatic matching is often wrong. Linking manually means you always know exactly what is being tracked.</p>
+          </div>
+        </section>
+
+        <!-- ── APP LOCK ───────────────────────────────────────────────── -->
+        <section class="guide-section" id="applock" aria-labelledby="h2-applock">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">lock</span>
+            </span>
+            <h2 id="h2-applock">App lock</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>What app lock does</h3>
+            <p>App lock adds an authentication step when you open DropSauce. This can be your fingerprint, face unlock, or your device PIN/pattern — whatever your phone uses for biometrics or screen lock. It is useful if you share your device and want your library to stay private.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Enabling app lock</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Privacy &amp; security</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Toggle on <strong>App lock</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Choose whether to use biometrics, device credentials, or both. The system biometric prompt will appear to confirm setup.</div>
+              </li>
+            </ol>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>You must have a screen lock set up on your device for app lock to work. If your device has no PIN or biometric enrolled, Android will prompt you to set one first.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>How long before it locks again</h3>
+            <p>In the same Privacy &amp; security settings screen, you can set how quickly the app locks after going to the background — immediately, after 30 seconds, or after a few minutes. This way a quick app switch doesn't force you to re-authenticate.</p>
+          </div>
+        </section>
+
+        <!-- ── WIDGETS ────────────────────────────────────────────────── -->
+        <section class="guide-section" id="widgets" aria-labelledby="h2-widgets">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">widgets</span>
+            </span>
+            <h2 id="h2-widgets">Widgets</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Available widgets</h3>
+            <p>DropSauce offers home screen widgets that let you jump back into reading without opening the app. Available widgets include:</p>
+            <ul class="guide-list">
+              <li><strong>Continue reading</strong> — Shows the manga you were reading last with a button to open the next chapter.</li>
+              <li><strong>Favorites</strong> — A grid or list of manga from your favorites that you can tap to open.</li>
+              <li><strong>Reading stats</strong> — A glanceable view of your reading statistics like chapters read this week.</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Adding a widget</h3>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Long-press an empty area of your home screen.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap <strong>Widgets</strong> (varies by launcher).</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Scroll to find DropSauce and drag the widget you want onto the home screen.</div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- ── MIGRATION ──────────────────────────────────────────────── -->
+        <section class="guide-section" id="migration" aria-labelledby="h2-migration">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">swap_horiz</span>
+            </span>
+            <h2 id="h2-migration">Migrating from other apps</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Moving from Kotatsu</h3>
+            <p>If you were already using the original Kotatsu app, you can transfer your entire library to DropSauce in a few steps:</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>In the original Kotatsu app, go to <strong>Settings → Data</strong> and create a backup.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>In DropSauce, go to <strong>Settings → Data &amp; backup → Restore backup</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Select the Kotatsu backup file. DropSauce will recognize it automatically and import everything.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>Moving from Mihon or Tachiyomi</h3>
+            <p>DropSauce has a dedicated import tool for Mihon/Tachiyomi-compatible backup files.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>In Mihon, create a backup from <strong>Settings → Data and storage → Create backup</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>In DropSauce, go to <strong>Settings → Data &amp; backup → Import from Mihon</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Select the <code>.tachibk</code> or <code>.proto.gz</code> backup file.</div>
+              </li>
+              <li>
+                <span class="step-num">4</span>
+                <div>The app imports favorites, categories, history, and progress. Install the matching extensions to resume reading.</div>
+              </li>
+            </ol>
+            <div class="guide-note">
+              <span class="material-symbols-rounded" aria-hidden="true">info</span>
+              <p>Extensions from Mihon/Tachiyomi are not compatible with DropSauce. You need to find and install the equivalent extension from a DropSauce-compatible repository.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── UPDATES & TROUBLESHOOTING ─────────────────────────────── -->
+        <section class="guide-section" id="updates" aria-labelledby="h2-updates">
+          <div class="guide-section-header">
+            <span class="guide-section-icon" aria-hidden="true">
+              <span class="material-symbols-rounded">system_update</span>
+            </span>
+            <h2 id="h2-updates">Updates & troubleshooting</h2>
+          </div>
+
+          <div class="guide-block">
+            <h3>Updating the app</h3>
+            <p>DropSauce can check for and install updates without leaving the app.</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → About</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>Tap <strong>Check for updates</strong>. If a new version is available, you will see a download button.</div>
+              </li>
+              <li>
+                <span class="step-num">3</span>
+                <div>Tap <strong>Download &amp; install</strong>. The app downloads the new APK and prompts you to install it.</div>
+              </li>
+            </ol>
+            <p>You can also download the latest APK manually from the <a href="https://github.com/HuzaifaKhalid1311/DropSauce/releases/latest" class="guide-link">GitHub Releases page</a>.</p>
+          </div>
+
+          <div class="guide-block">
+            <h3>Updating extensions</h3>
+            <p>Source extensions update independently of the app. When a source breaks (common with web-scraped sources), check for an extension update first:</p>
+            <ol class="guide-steps">
+              <li>
+                <span class="step-num">1</span>
+                <div>Go to <strong>Settings → Extensions</strong>.</div>
+              </li>
+              <li>
+                <span class="step-num">2</span>
+                <div>If any extension has a pending update, an <strong>Update</strong> button appears next to it. Tap it.</div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="guide-block">
+            <h3>A source stopped working</h3>
+            <p>Sources break when the website they scrape changes its layout. The fix is usually an extension update. If no update is available yet, the source maintainer has likely been notified — check the extension repository's issue tracker.</p>
+            <div class="guide-tip">
+              <span class="material-symbols-rounded" aria-hidden="true">lightbulb</span>
+              <p>If a specific manga is unavailable on one source, use <strong>Find alternatives</strong> on the manga details page to look for the same title on your other installed sources.</p>
+            </div>
+          </div>
+
+          <div class="guide-block">
+            <h3>Images not loading</h3>
+            <p>If images fail to load in the reader or on manga details screens:</p>
+            <ul class="guide-list">
+              <li>Check your internet connection.</li>
+              <li>Some sources require a VPN or are geo-restricted. A proxy setting is available in <strong>Settings → Network → Proxy</strong>.</li>
+              <li>Try clearing the image cache in <strong>Settings → Storage → Clear image cache</strong>.</li>
+              <li>Check if the extension needs an update.</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Progress not saving</h3>
+            <p>If your reading progress keeps resetting:</p>
+            <ul class="guide-list">
+              <li>Make sure you are not clearing app data or using a battery optimizer that kills the app's background service before it can save.</li>
+              <li>If you use sync, make sure a sync has happened recently on all devices.</li>
+              <li>Progress saves when you leave a chapter, not while reading mid-page.</li>
+            </ul>
+          </div>
+
+          <div class="guide-block">
+            <h3>Getting help</h3>
+            <p>If something is not working and this guide didn't solve it:</p>
+            <ul class="guide-list">
+              <li>Join the <a href="https://discord.com/channels/1435615296202477581/1435650246163169382/1435651186140119091" class="guide-link">Discord server</a> and describe your issue.</li>
+              <li>Open an issue on the <a href="https://github.com/HuzaifaKhalid1311/DropSauce/issues" class="guide-link">GitHub Issues page</a>. Include your app version (found in Settings → About) and a description of what went wrong.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Bottom actions -->
+        <div class="guide-bottom-actions">
+          <a class="button button-primary" href="https://github.com/HuzaifaKhalid1311/DropSauce/releases/latest" data-latest-apk-link>
+            <span class="material-symbols-rounded" aria-hidden="true">download</span>
+            Download APK
+          </a>
+          <a class="button button-secondary" href="/">
+            <span class="material-symbols-rounded" aria-hidden="true">home</span>
+            Back to home
+          </a>
+          <a class="button button-secondary" href="https://github.com/HuzaifaKhalid1311/DropSauce/issues">
+            <span class="material-symbols-rounded" aria-hidden="true">bug_report</span>
+            Report an issue
+          </a>
+        </div>
+
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="/">
+          <img src="/assets/app-icon-dark.svg" alt="" width="34" height="34">
+          <span>DropSauce</span>
+        </a>
+        <p>Free, open-source manga reading for Android. Bring your own sources and keep your data under your control.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="/guide">Guide</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="https://github.com/HuzaifaKhalid1311/DropSauce">GitHub</a>
+      </nav>
+    </footer>
+  </body>
+</html>
